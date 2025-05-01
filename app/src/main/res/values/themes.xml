@@ -1,9 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.ContactApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.ContactApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorPrimaryVariant">@color/teal_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Pastikan Action Bar tidak transparan -->
+        <item name="android:windowActionBarOverlay">false</item>
+        <!-- Pastikan konten tidak ditarik di bawah Action Bar -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Pastikan status bar tidak transparan -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <!-- Pastikan konten tidak ditarik di bawah status bar -->
+        <item name="android:windowTranslucentNavigation">false</item>
     </style>
-
-    <style name="Theme.ContactApp" parent="Base.Theme.ContactApp" />
 </resources>
